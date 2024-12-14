@@ -11,6 +11,9 @@
 </head>
 <body>
     <div class ="container">
+        <div id='preloader'>
+            <img class= 'preloader_img'  src="preloader.gif" alt="preloader">
+        </div>
         <header class="header">
             <div class="header-content">
                 <img src="logo.svg" alt="logo" width="22px" height="22px" class="header-image">
@@ -21,41 +24,34 @@
             </div>
         </header>
         <div class="frame1">
-            <div class="button-group">
-                <button class="Contact">Все контакты</button>
-                <button class="Saved">Избранное</button>
+            <div class="button-group" id="button-group">
+                <button class="Contact" data-value="all">Все контакты</button>
+                <button class="Saved" data-value="favorites">Избранное</button>
             </div>
-            <div >
-                <select>
-                    <option value="По умолчанию">По умолчанию</option>
-                    <option value="По фамилии">По фамилии</option>
-                    <option value="По имени">По имени</option>
-                </select>
-            </div>
-        </div>
-        <div class="frame2">
-            <div class="frame3">
-                <img src="image.png" alt="фото" >
-                <p class="name">Антон Котиков</p>
-                <p class="phone">+7 920 472 32-23</p>
-            </div>
-            <div class="frame3">
-                <img src="image1.png" alt="фото" >
-                <p class="name">Диана Фролова</p>
-                <p class="phone">+7 920 472 32-23</p>
-            </div>
-            <div class="frame3">
-                <img src="image2.png" alt="фото" >
-                <p class="name">Анастасия Лебедева</p>
-                <p class="phone">+7 920 472 32-23</p>
-            </div>
-            <div class="frame3">
-                <img src="image3.png" alt="фото" >
-                <p class="name">Алина Давыдова</p>
-                <p class="phone">+7 920 472 32-23</p>
+            <div class="dropdown">
+                <button class="dropdown-toggle">
+                    <span class="dropdown-label" > По умолчанию</span>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L6 6.5L11 1.5" stroke="#354153" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </button>
+                <div class="dropdown-menu" id="cardFilter">
+                    <div class="dropdown-item" data-value="default">По умолчанию</div>
+                    <div class="dropdown-item" data-value="lastName">По фамилии</div>
+                    <div class="dropdown-item" data-value="firstName">По имени</div>
+                </div>                
             </div>
         </div>
+        <div id="cardContainer" class="card-container"></div>
+        <script src="./script.js"></script>
     </div>
+
+    <div class="container_tel">
+        <input type="text" id="input" onkeyup="input()">
+        <p id="block"></p>
+    </div>
+
     <footer class="footer">
         &#9426; Вариант 7. Косенкова Елизавета, группа ПИ-22-2
     </footer>
