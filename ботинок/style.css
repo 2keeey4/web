@@ -3,110 +3,122 @@
     padding: 0px;
 }
 
-header{
-    padding: 20px 97px;
+.header-content{
+    padding: 85px 97px;
+    top: 90px;
+    left: 97px;
     border-bottom: 3px #eaecf0 double;;
-    opacity: 0px;
     display: flex;
     justify-content: space-between;
-
 }
 a {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
     text-decoration: none;
     color:#000000;
 }
 .info_container{
     padding: 10px 97px;
-    width: 446px;
-    height: 463px;
     top: 255px;
     left: 97px;
-    gap: 0px;
     border-radius: 50px 0px 0px 0px;
-    opacity: 0px;
     border-bottom: 3px #eaecf0 double;
-    
 }
 .price{
-    
-    font-family: "Kanit";
+    width: 115px;
+    height: 82px;
+    top: 636px;
+    left: 97px;
+    opacity: 0px;
+    font-family: Kanit;
     font-size: 55px;
     font-weight: 300;
     line-height: 82.23px;
     text-align: left;
-    color:#292929;
-    display: flex;
-    align-items: center;
-    margin-top:10px;
+    
 }
 .NIKE_AIR_MAX{
-    
-    font-family: 'Kanit', sans-serif;
-    font-size: 4.35875rem;
+
+    font-family: Kanit;
+    font-size: 69.74px;
     font-weight: 600;
     line-height: 104.26px;
+    text-align: left;    
     color: rgba(0, 0, 0, 1);
-    margin-top: 1px;
-    text-wrap:nowrap;
+    width: 446px;
+    height: 104px;
+    top: 255px;
+    left: 97px;
+
 }
 .LEBAGH{
-    font-family: 'Kanit', sans-serif;
-    font-size: 7rem;
+    font-family: Kanit;
+    font-size: 113.33px;
     font-weight: 300;
     line-height: 169.42px;
+    text-align: left;    
     color: rgba(252, 113, 45, 1);
-    margin-top: -28px;
+    width: 407px;
+    height: 169px;
+    top: 331.71px;
+    left: 97px;  
 }
 .text_shoes{
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.089375rem;
+    width: 387.92px;
+    height: 170.86px;
+    top: 485.14px;
+    left: 97px;   
+    font-family: Kanit;
+    font-size: 17.43px;
     font-weight: 400;
     line-height: 26.07px;
-    margin-top: -17px;
-    text-transform: capitalize;
-    width: 387.92px;
-    
+    text-align: left;
 }
 .Add_To_Cart{
     width: 165px;
     height: 60px;
+    top: 647px;
+    left: 261px;
     border-radius: 50px;
     background-color: rgba(240, 240, 240, 1);
     box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.25);
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.125rem;
+    font-family: Kanit;
+    font-size: 18px;
     font-weight: 500;
     line-height: 26.91px;
+    text-align: center;
     color: rgba(41, 41, 41, 1);
     border: none;
-    cursor: pointer;
-    transition: 0.2s;
 }
 .Add_Cart_Price{
     display: flex;
+    justify-content: space-between;
     gap: 49px;
     align-items: center;
 }
-.Variation {
+.Variation {  
+    padding: 10px 40px;
     display:grid;
-    grid-template-columns: repeat(auto-fill,222px);
-    margin-left:40px;
+    grid-template-columns: repeat(auto-fill,195px);
 }
 
 .card {
     width: 180px;
     height: 120px;
-    gap: 0px;
+    top: 841px;
+    left: 81px;
     border-radius: 30px;
     background-color: #E4E4E4;
+    font-family: Inter;
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
     margin-top: 68px;
     margin-left: 42px;
-
 }
-
 .name_shoes {
     background-color: #E4E4E4;
     width: 61px;
@@ -132,7 +144,6 @@ a {
     transform: rotate(-30deg);
     margin-top: -200px;
     margin-left: -17px;
-    filter: drop-shadow(4px 4px 2px #00000026);
 
 }
 .five_star {
@@ -149,5 +160,48 @@ a {
     border:none;
     margin-left:155px;
     margin-top: -10px;
-    z-index:1;
+}
+
+.JUST_DO_IT_text {
+    position: absolute;
+    width: 785px;
+    height: 1082px;
+    top: 45px;
+    left: 755px;
+    font-family: Londrina Shadow;
+    font-size: 260px;
+    font-weight: 400;
+    text-align: left;
+    color: #FE6B2826;
+}
+
+.big_shoes {
+    
+    position: absolute;
+    margin-left:261px;
+    margin-top:-1325px;;
+}
+
+@media (max-width: 800px){
+    .info_container {
+        padding: 7px ;
+    }
+    .header-content{
+        padding: 47px 7px;
+    }
+    .Variation{
+        padding: 0px ;
+    }
+    .JUST_DO_IT {
+        display: none;
+    }
+
+}
+@media (min-width: 800px){
+    .info_container{
+        width: 570px;
+    }
+    .header-content{
+        width: 633px;
+    }
 }
